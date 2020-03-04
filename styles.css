@@ -22,6 +22,9 @@
 .header-btn.main-white-color:active {
   text-shadow: 1px 1px 2px var(--main--white--color);
 }
+.add-btn.main-white-color:active {
+  text-shadow: 1px 1px 2px var(--main--white--color);
+}
 
 html {
   font-size: 10px;
@@ -59,6 +62,7 @@ html {
 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .header {
@@ -128,4 +132,22 @@ html {
 .todos {
   display: flex;
   flex-direction: column;
+}
+
+.todo {
+  position: relative;
+  flex: 1 0 auto;
+  text-align: center;
+  min-height: 34px;
+  margin: 16px 0 0;
+  font-family: "homenaje", sans-serif;
+  font-size: 30px;
+
+  border-bottom: 1px solid var(--main--orange--color);
+}
+
+.todo-text {
+  position: absolute;
+  left: 50%;
+  transform: translate(50%);
 }
